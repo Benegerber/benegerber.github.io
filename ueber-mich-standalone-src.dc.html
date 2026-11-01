@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#faf3e6">
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="800" fill="#faf3e6"/>
+<circle cx="600" cy="300" r="150" fill="#e0714b"/>
+<circle cx="330" cy="620" r="60" fill="#e3bb6a"/>
+<text x="600" y="620" text-anchor="middle" font-family="Georgia,serif" font-size="140" fill="#3a322c">VB</text>
+</svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Über mich — Valeria Blum, Rednerin &amp; Moderatorin</title>
+<meta name="description" content="Valeria Blum ist freischaffende Rednerin und Moderatorin. Wie sie arbeitet, was ihr wichtig ist und weshalb jede Rede eigene Worte verlangt.">
+<meta property="og:title" content="Über mich — Valeria Blum">
+<meta property="og:description" content="Freischaffende Rednerin und Moderatorin: zuhören, persönlich schreiben, verlässlich begleiten.">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="de_CH">
+<link rel="canonical" href="https://benegerber.github.io/ueber-mich.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+@keyframes vbRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes vbGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+body{margin:0;background:oklch(0.972 0.022 78);-webkit-font-smoothing:antialiased}
+a{color:oklch(0.53 0.155 30)}
+a:hover{color:oklch(0.43 0.13 30)}
+::selection{background:oklch(0.78 0.12 80);color:oklch(0.26 0.03 40)}
+html{scroll-behavior:smooth}
+@media(max-width:760px){
+[data-burger]{display:flex !important}
+[data-nav]{display:none !important;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px !important;padding:8px 18px 18px;background:oklch(0.972 0.022 78);border-bottom:1px solid oklch(0.88 0.03 78);box-shadow:0 14px 28px oklch(0.26 0.03 40 / 0.12)}
+[data-nav][data-open="1"]{display:flex !important}
+[data-nav] a{padding-top:12px;padding-bottom:12px}
+}
+</style>
+</helmet>
+<div style="font-family:'Karla',sans-serif;color:oklch(0.26 0.03 40);background:oklch(0.972 0.022 78);min-height:100vh;overflow-x:hidden">
+
+<header style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px clamp(18px,4vw,56px);flex-wrap:wrap;position:sticky;top:0;background:oklch(0.972 0.022 78 / 0.93);backdrop-filter:blur(8px);z-index:30;border-bottom:1px solid oklch(0.88 0.03 78)">
+  <a href="index.html" style="text-decoration:none;display:flex;align-items:baseline;gap:9px">
+    <span style="font-family:'Instrument Serif',serif;font-size:29px;line-height:1;color:oklch(0.26 0.03 40);letter-spacing:-0.01em">Valeria Blum</span>
+    <span style="width:7px;height:7px;border-radius:50%;background:oklch(0.65 0.16 32);display:inline-block"></span>
+  </a>
+  <button data-burger="1" onClick="{{ toggleNav }}" aria-label="Menü" style="display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;padding:0;border:none;background:transparent;cursor:pointer">
+    <span style="width:22px;height:2px;background:oklch(0.53 0.155 30);display:block"></span>
+    <span style="width:22px;height:2px;background:oklch(0.53 0.155 30);display:block"></span>
+    <span style="width:22px;height:2px;background:oklch(0.53 0.155 30);display:block"></span>
+  </button>
+  <nav data-nav="1" data-open="{{ navOpen }}" style="display:flex;gap:clamp(12px,2.2vw,26px);align-items:center;flex-wrap:wrap;font-size:14.5px;font-weight:500">
+    <a href="traurednerin.html" style="text-decoration:none;color:oklch(0.34 0.03 40)" style-hover="color:oklch(0.53 0.155 30)">Traurednerin</a>
+    <a href="vorlesespitex.html" style="text-decoration:none;color:oklch(0.34 0.03 40)" style-hover="color:oklch(0.53 0.155 30)">Vorlesespitex</a>
+    <a href="eventmoderation.html" style="text-decoration:none;color:oklch(0.34 0.03 40)" style-hover="color:oklch(0.53 0.155 30)">Eventmoderation</a>
+    <a href="ueber-mich.html" style="text-decoration:none;color:oklch(0.53 0.155 30);font-weight:700">Über mich</a>
+    <a href="index.html#kontakt" style="text-decoration:none;background:oklch(0.53 0.155 30);color:oklch(0.98 0.012 78);padding:11px 22px;border-radius:100px;font-weight:600" style-hover="background:oklch(0.43 0.13 30)">Kontakt</a>
+  </nav>
+</header>
+
+<section style="padding:clamp(34px,5vw,64px) clamp(18px,4vw,56px) 0">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;justify-items:start;gap:20px;margin-bottom:18px">
+      <a href="index.html" style="font-size:14px;color:oklch(0.5 0.03 40);text-decoration:none;font-weight:500">← Zur Startseite</a>
+      <p style="display:flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:oklch(0.53 0.155 30);background:oklch(0.65 0.16 32 / 0.12);padding:9px 18px;border-radius:100px;margin:0">Über mich</p>
+    </div>
+    <h1 style="font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-0.03em;font-size:clamp(36px,7.4vw,92px);line-height:0.96;margin:0 0 20px;max-width:16ch;text-wrap:pretty;animation:vbRise 0.8s ease-out both">Die richtigen Worte zur richtigen Zeit.</h1>
+    <div style="height:2px;background:oklch(0.8 0.09 80);margin-top:clamp(28px,4vw,48px);transform-origin:left;animation:vbGrow 1.1s 0.2s cubic-bezier(0.2,0.7,0.2,1) both"></div>
+  </div>
+</section>
+
+<section style="padding:clamp(38px,5vw,64px) clamp(18px,4vw,56px)">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(30px,5vw,64px);align-items:start">
+    <div style="position:relative">
+      <div style="position:relative;z-index:1;width:100%;height:clamp(320px,40vw,520px);border-radius:20px 20px 140px 20px;overflow:hidden;background:oklch(0.9 0.02 78)">
+        <image-slot id="ueber-mich-detail-foto" shape="rect" placeholder="Foto: Valeria Blum"></image-slot>
+      </div>
+      <span style="position:absolute;top:-14px;left:-14px;width:64px;height:64px;border-radius:50%;background:oklch(0.78 0.12 80);display:block"></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <p style="font-size:clamp(17px,1.75vw,19.5px);line-height:1.82;color:oklch(0.3 0.03 40);margin:0;text-wrap:pretty">Ich bin Valeria Blum, freischaffende Rednerin und Moderatorin. Worte haben mich schon immer begleitet: die richtigen zur richtigen Zeit zu finden, das ist es, was mich an meiner Arbeit begeistert. Ob Hochzeit, Vorlesestunde oder Firmenanlass: ich begleite Menschen an Tagen, die berühren, verbinden und in Erinnerung bleiben.</p>
+      <p style="font-size:clamp(16.5px,1.7vw,18.5px);line-height:1.82;color:oklch(0.38 0.03 40);margin:0;text-wrap:pretty">Zu meiner Arbeit gekommen bin ich über meine Liebe zur Sprache und meine Freude daran, Menschen zuzuhören. Jede Geschichte, jede Beziehung, jedes Leben ist anders, und genau das macht jede Rede und jede Moderation zu einer eigenen kleinen Herausforderung, der ich mich mit Neugier und Sorgfalt stelle.</p>
+      <p style="font-size:clamp(16.5px,1.7vw,18.5px);line-height:1.82;color:oklch(0.38 0.03 40);margin:0;text-wrap:pretty">Mir ist wichtig, genau hinzuhören: Was macht diesen Moment aus, was ist den beteiligten Menschen wichtig, welcher Ton passt? Daraus entstehen Worte, die echt klingen, nie austauschbar, nie von der Stange. Ich nehme mir Zeit für das Gespräch davor, denn nur so kann eine Rede oder Moderation entstehen, die wirklich zu Ihnen passt.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:oklch(0.26 0.03 40);color:oklch(0.94 0.016 78);padding:clamp(52px,7vw,96px) clamp(18px,4vw,56px)">
+  <div style="max-width:1120px;margin:0 auto">
+    <h2 style="font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-0.025em;font-size:clamp(27px,4.2vw,46px);margin:0 0 clamp(30px,4vw,48px);text-align:center">Wie ich arbeite</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(22px,3vw,34px)">
+      <sc-for list="{{ principles }}" as="p" hint-placeholder-count="3">
+        <div style="display:flex;flex-direction:column;gap:12px;border-top:2px solid oklch(0.78 0.12 80);padding-top:20px">
+          <span style="font-family:'Instrument Serif',serif;font-size:20px;color:oklch(0.82 0.11 80);line-height:1">{{ p.n }}</span>
+          <h3 style="margin:0;font-size:21px;font-weight:700;line-height:1.3;color:oklch(0.97 0.012 78)">{{ p.title }}</h3>
+          <p style="margin:0;font-size:16px;line-height:1.72;color:oklch(0.81 0.02 78)">{{ p.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(48px,7vw,86px) 24px clamp(56px,8vw,96px);text-align:center">
+  <a href="index.html#kontakt" style="display:inline-block;background:oklch(0.53 0.155 30);color:oklch(0.98 0.012 78);padding:17px 40px;border-radius:100px;font-weight:700;font-size:16px;text-decoration:none" style-hover="background:oklch(0.43 0.13 30)">Jetzt Kontakt aufnehmen</a>
+</section>
+
+<footer style="background:oklch(0.26 0.03 40);color:oklch(0.87 0.02 78);padding:clamp(42px,6vw,72px) clamp(18px,4vw,56px) 26px;border-top:1px solid oklch(0.38 0.03 40)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:30px;max-width:1240px;margin:0 auto">
+    <div>
+      <p style="font-family:'Instrument Serif',serif;font-size:26px;margin:0 0 8px;color:oklch(0.97 0.012 78)">Valeria Blum</p>
+      <p style="font-size:14px;color:oklch(0.74 0.02 78);margin:0">Trauung, Vorlesen &amp; Moderation</p>
+    </div>
+    <div style="display:grid;gap:9px;font-size:14.5px">
+      <a href="traurednerin.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Traurednerin</a>
+      <a href="vorlesespitex.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Vorlesespitex</a>
+      <a href="eventmoderation.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Eventmoderation</a>
+    </div>
+    <div style="display:grid;gap:9px;font-size:14.5px;color:oklch(0.79 0.02 78)">
+      <span>Telefon: [Telefonnummer]</span>
+      <span>E-Mail: [E-Mail-Adresse]</span>
+      <span>Ort: [Ort / Region]</span>
+    </div>
+    <div style="display:grid;gap:9px;font-size:14.5px">
+      <a href="ueber-mich.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Über mich</a>
+      <a href="impressum.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Impressum</a>
+      <a href="impressum.html#datenschutz" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Datenschutz</a>
+    </div>
+  </div>
+  <p style="max-width:1240px;margin:38px auto 0;font-size:12.5px;color:oklch(0.64 0.02 78);border-top:1px solid oklch(0.38 0.03 40);padding-top:18px">© 2026 Valeria Blum, Trauung &amp; Moderation</p>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { navOpen: false };
+
+  toggleNav = () => this.setState(s => ({ navOpen: !s.navOpen }));
+
+  renderVals() {
+    return {
+      navOpen: this.state.navOpen ? '1' : '0',
+      toggleNav: this.toggleNav,
+      principles: [
+        { n: '01', title: 'Zuhören', text: 'Jedes Gespräch beginnt damit, dass ich genau hinhöre, was Ihnen wichtig ist und welche Geschichte erzählt werden soll.' },
+        { n: '02', title: 'Persönlich schreiben', text: 'Aus dem, was ich höre, entsteht eine Rede oder Moderation, die zu den Menschen passt, nicht eine, die von der Stange kommt.' },
+        { n: '03', title: 'Verlässlich begleiten', text: 'Vom ersten Kontakt bis zum Tag selbst sind Sie bei mir in guten Händen, mit klarer Kommunikation und Verlässlichkeit.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

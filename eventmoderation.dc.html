@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Eventmoderatorin — Valeria Blum</title>
+<meta name="description" content="Eventmoderatorin von Valeria Blum: Moderation für Firmenanlässe, Jubiläen und private Feste. Sicher durch das Programm, mit Gespür für den richtigen Ton.">
+<meta name="keywords" content="Eventmoderatorin, Eventmoderation, Moderatorin, Firmenanlass, Jubiläum, Fest, Moderation Schweiz">
+<meta property="og:title" content="Eventmoderatorin — Valeria Blum">
+<meta property="og:description" content="Moderation für Anlässe jeder Grösse: sicher durch das Programm, mit Gespür für den richtigen Ton.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_CH">
+<link rel="canonical" href="https://benegerber.github.io/eventmoderation.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&amp;family=Karla:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+@keyframes vbRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes vbGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+body{margin:0;background:oklch(0.95 0.03 55);-webkit-font-smoothing:antialiased}
+a{color:oklch(0.52 0.13 42)}
+a:hover{color:oklch(0.43 0.11 42)}
+::selection{background:oklch(0.76 0.07 68);color:oklch(0.24 0.03 40)}
+html{scroll-behavior:smooth}
+@media(max-width:760px){
+[data-burger]{display:flex !important}
+[data-nav]{display:none !important;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px !important;padding:8px 18px 18px;background:oklch(0.95 0.03 55);border-bottom:1px solid oklch(0.88 0.03 78);box-shadow:0 14px 28px oklch(0.26 0.03 40 / 0.12)}
+[data-nav][data-open="1"]{display:flex !important}
+[data-nav] a{padding-top:12px;padding-bottom:12px}
+}
+</style>
+</helmet>
+<div style="font-family:'Karla',sans-serif;color:oklch(0.26 0.03 40);background:oklch(0.95 0.03 55);min-height:100vh;overflow-x:hidden">
+
+<header style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px clamp(18px,4vw,56px);flex-wrap:wrap;position:sticky;top:0;background:oklch(0.95 0.03 55 / 0.93);backdrop-filter:blur(8px);z-index:30;border-bottom:1px solid oklch(0.88 0.03 78)">
+  <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:baseline;gap:9px">
+    <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:29px;line-height:1;color:oklch(0.26 0.03 40);letter-spacing:-0.01em">Valeria Blum</span>
+    <span style="width:7px;height:7px;border-radius:50%;background:oklch(0.84 0.06 68);display:inline-block"></span>
+  </a>
+  <button data-burger="1" onClick="{{ toggleNav }}" aria-label="Menü" style="display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;padding:0;border:none;background:transparent;cursor:pointer">
+    <span style="width:22px;height:2px;background:oklch(0.26 0.03 40);display:block"></span>
+    <span style="width:22px;height:2px;background:oklch(0.26 0.03 40);display:block"></span>
+    <span style="width:22px;height:2px;background:oklch(0.26 0.03 40);display:block"></span>
+  </button>
+  <nav data-nav="1" data-open="{{ navOpen }}" style="display:flex;gap:clamp(12px,2.2vw,26px);align-items:center;flex-wrap:wrap;font-size:14.5px;font-weight:500">
+    <a href="eventmoderation.dc.html" style="text-decoration:none;color:oklch(0.48 0.12 42);font-weight:700">Eventmoderatorin</a>
+    <a href="traurednerin.dc.html" style="text-decoration:none;color:oklch(0.34 0.03 40)" style-hover="color:oklch(0.52 0.13 42)">Traurednerin</a>
+    <a href="vorlesespitex.dc.html" style="text-decoration:none;color:oklch(0.34 0.03 40)" style-hover="color:oklch(0.52 0.13 42)">Vorlesespitex</a>
+    <a href="ueber-mich.dc.html" style="text-decoration:none;color:oklch(0.34 0.03 40)" style-hover="color:oklch(0.52 0.13 42)">Über mich</a>
+    <a href="index.dc.html?goto=kontakt#kontakt" style="text-decoration:none;background:oklch(0.52 0.13 42);color:oklch(0.98 0.012 78);padding:11px 22px;border-radius:100px;font-weight:600" style-hover="background:oklch(0.43 0.11 42)">Kontakt</a>
+  </nav>
+</header>
+
+<section style="padding:clamp(18px,3vw,34px) clamp(14px,3vw,40px) 0">
+  <div style="max-width:1200px;margin:0 auto;width:100%;height:clamp(280px,40vw,470px);border-radius:24px;overflow:hidden;background:oklch(0.9 0.02 78)">
+    <image-slot id="eventmoderation-foto" shape="rect" placeholder="Foto: Eventmoderation"></image-slot>
+  </div>
+</section>
+
+<section style="padding:clamp(34px,5vw,56px) clamp(18px,4vw,56px) 0">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:grid;justify-items:start;gap:20px;margin-bottom:18px">
+      <a href="index.dc.html#angebote" style="font-size:14px;color:oklch(0.5 0.03 40);text-decoration:none;font-weight:500">← Zur Startseite</a>
+      <p style="display:flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:oklch(0.48 0.12 42);background:oklch(0.84 0.06 68 / 0.22);padding:9px 18px;border-radius:100px;margin:0">Angebot</p>
+    </div>
+    <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:500;letter-spacing:-0.03em;font-size:clamp(36px,7vw,84px);line-height:0.98;margin:0 0 20px;text-wrap:pretty;animation:vbRise 0.8s ease-out both">Eventmoderatorin</h1>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4.5vw,64px);align-items:center">
+      <p style="font-size:clamp(17px,1.8vw,20px);line-height:1.68;color:oklch(0.4 0.03 40);margin:0;max-width:52ch;text-wrap:pretty">Ich moderiere Vorträge, Konzerte, Panels, Vereins- und Firmenanlässe. Der rote Faden in der Hand, gebe ich euren Themen eine Bühne. Mit einer professionellen, klaren Art und einer Prise Humor sorge ich dafür, dass eure Gäste auch nach der Mittagspause aufmerksam bleiben.</p>
+      <div style="width:100%;aspect-ratio:4/3;border-radius:24px;overflow:hidden;background:oklch(0.9 0.02 78)">
+        <image-slot id="eventmoderation-intro-foto" shape="rect" placeholder="Foto: Moderation"></image-slot>
+      </div>
+    </div>
+    <div style="height:2px;background:oklch(0.76 0.07 68);margin-top:clamp(28px,4vw,48px);transform-origin:left;animation:vbGrow 1.1s 0.2s cubic-bezier(0.2,0.7,0.2,1) both"></div>
+  </div>
+</section>
+
+<section style="background:oklch(0.84 0.06 68 / 0.17);padding:clamp(52px,7vw,92px) clamp(18px,4vw,56px)">
+  <div style="max-width:1120px;margin:0 auto">
+    <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:500;letter-spacing:-0.025em;font-size:clamp(27px,4.2vw,46px);margin:0 0 clamp(30px,4vw,48px);text-align:center">Wie können Sie mich buchen?</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(20px,3vw,30px)">
+      <sc-for list="{{ steps }}" as="step" hint-placeholder-count="3">
+        <div style="background:oklch(0.985 0.014 78);border-radius:22px;padding:clamp(24px,2.8vw,34px);display:flex;flex-direction:column;gap:13px;box-shadow:0 2px 10px oklch(0.4 0.05 78 / 0.07)">
+          <span style="width:46px;height:46px;border-radius:50%;background:oklch(0.84 0.06 68 / 0.28);display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-size:25px;color:oklch(0.48 0.12 42);line-height:1">{{ step.n }}</span>
+          <h3 style="margin:0;font-size:19px;font-weight:700;line-height:1.3">{{ step.title }}</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.68;color:oklch(0.44 0.03 40)">{{ step.text }}</p>
+          <sc-if value="{{ step.showKontakt }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0;font-size:15.5px;line-height:1.68;color:oklch(0.44 0.03 40)"><a href="index.dc.html?goto=kontakt#kontakt" style="color:oklch(0.52 0.13 42);text-decoration:none;border-bottom:1px solid oklch(0.52 0.13 42 / 0.4)" style-hover="border-color:oklch(0.52 0.13 42)">Zum Kontaktformular</a></p>
+          </sc-if>
+          <sc-if value="{{ step.showKonditionen }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0;font-size:15.5px;line-height:1.68;color:oklch(0.44 0.03 40)">Genauere Angaben zu meinen Konditionen finden Sie <a href="#konditionen" style="color:oklch(0.52 0.13 42);text-decoration:none;border-bottom:1px solid oklch(0.52 0.13 42 / 0.4)" style-hover="border-color:oklch(0.52 0.13 42)">hier</a>.</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="konditionen" style="padding:clamp(32px,4.2vw,52px) clamp(18px,4vw,56px);scroll-margin-top:90px">
+  <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(20px,2.8vw,36px);align-items:start">
+    <div>
+      <p style="font-size:12.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:oklch(0.52 0.08 62);margin:0 0 14px">Konditionen</p>
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:500;letter-spacing:-0.025em;font-size:clamp(22px,2.6vw,32px);line-height:1.08;margin:0;white-space:nowrap">Und was kostet das?</h2>
+      <div style="display:flex;flex-direction:column;gap:clamp(18px,2.2vw,26px);margin:clamp(22px,2.8vw,32px) 0 0">
+        <div>
+          <p style="font-size:clamp(15.5px,1.6vw,17px);line-height:1.65;color:oklch(0.45 0.03 40);margin:0;text-wrap:pretty">Jeder Anlass ist anders, deshalb gibt es bei mir keine Pauschalpakete, sondern ein Angebot, das zu eurem Event passt. Ob kurzes Panel, Firmenfeier oder grosse Gala mit Podiumsdiskussion: Ich schaue mir an, was ihr braucht, und mache euch eine faire, transparente Offerte.</p>
+          <p style="font-size:clamp(15.5px,1.6vw,17px);line-height:1.65;color:oklch(0.45 0.03 40);margin:12px 0 0;text-wrap:pretty">Zur Orientierung: Moderationen beginnen bei 500 CHF.</p>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:clamp(20px,2.6vw,28px)">
+      <div>
+        <p style="font-size:12.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:oklch(0.52 0.08 62);margin:0 0 14px">Im Preis enthalten sind</p>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:clamp(16px,1.65vw,18px);line-height:1.5;color:oklch(0.34 0.03 40)">
+          <li style="display:flex;gap:12px"><span style="color:oklch(0.68 0.09 58);flex:none">—</span><span>persönliches Briefing mit dem Veranstalter</span></li>
+          <li style="display:flex;gap:12px"><span style="color:oklch(0.68 0.09 58);flex:none">—</span><span>Vorbereitung auf den Anlass und das Programm</span></li>
+          <li style="display:flex;gap:12px"><span style="color:oklch(0.68 0.09 58);flex:none">—</span><span>Recherche zu den relevanten Themen und Personen</span></li>
+          <li style="display:flex;gap:12px"><span style="color:oklch(0.68 0.09 58);flex:none">—</span><span>Vorbereitung von Anmoderationen, Übergängen und Fragen</span></li>
+          <li style="display:flex;gap:12px"><span style="color:oklch(0.68 0.09 58);flex:none">—</span><span>Moderation vor Ort</span></li>
+          <li style="display:flex;gap:12px"><span style="color:oklch(0.68 0.09 58);flex:none">—</span><span>kurze Nachbereitung</span></li>
+        </ul>
+        <p style="font-size:clamp(15.5px,1.6vw,17px);line-height:1.7;color:oklch(0.45 0.03 40);margin:16px 0 0;text-wrap:pretty">Dazu kommt die Anreise mit dem Zug von meinem Wohnort zur Location, verrechnet zum Halbtax-Preis.</p>
+      </div>
+      <div style="display:grid;gap:11px;font-size:clamp(16px,1.65vw,18px);line-height:1.5;color:oklch(0.34 0.03 40);border-top:1px solid oklch(0.86 0.03 78);padding-top:clamp(16px,2vw,22px)">
+        
+        
+        
+      </div><p style="font-size:clamp(16.5px,1.7vw,19px);line-height:1.78;color:oklch(0.4 0.03 40);margin:clamp(-14px,-1.4vw,-8px) 0 0;text-wrap:pretty">Ihr seid euch noch nicht sicher, was ihr genau braucht? Kein Problem. Erzählt mir einfach von eurem Anlass – wir schauen gemeinsam, was sinnvoll ist.</p>
+      
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(26px,3.4vw,42px) 24px clamp(34px,4.6vw,58px);text-align:center">
+  <a href="index.dc.html?goto=kontakt#kontakt" style="display:inline-block;background:oklch(0.52 0.13 42);color:oklch(0.98 0.012 78);padding:17px 40px;border-radius:100px;font-weight:700;font-size:16px;text-decoration:none" style-hover="background:oklch(0.43 0.11 42)">Jetzt Kontakt aufnehmen</a>
+</section>
+
+<footer style="background:oklch(0.25 0.01 265);color:oklch(0.87 0.02 78);padding:clamp(42px,6vw,72px) clamp(18px,4vw,56px) 26px">
+  <div style="display:flex;flex-wrap:wrap;gap:30px clamp(24px,3vw,40px);max-width:1240px;margin:0 auto;align-items:flex-start">
+    <div style="flex:1.4 1 200px;min-width:0">
+      <p style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;margin:0 0 8px;color:oklch(0.97 0.012 78)">Valeria Blum</p>
+      <p style="font-size:16px;line-height:1.5;color:oklch(0.87 0.02 78);margin:14px 0 0">Fotografien by <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:500;font-size:19px;color:oklch(0.82 0.11 80);letter-spacing:-0.01em">Nicole Mini</span></p>
+    </div>
+    <div style="flex:1 1 140px;display:flex;flex-direction:column;gap:9px;font-size:14.5px;min-width:0">
+      <a href="eventmoderation.dc.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Eventmoderatorin</a>
+      <a href="traurednerin.dc.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Traurednerin</a>
+      <a href="vorlesespitex.dc.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Vorlesespitex</a>
+    </div>
+    <div style="flex:1 1 230px;display:flex;flex-direction:column;gap:9px;font-size:14.5px;min-width:0;color:oklch(0.79 0.02 78);white-space:nowrap">
+      <span>Telefon: 079 249 15 95</span>
+      <span>E-Mail: valeria-blum@hotmail.com</span>
+    </div>
+    <div style="flex:1 1 120px;display:flex;flex-direction:column;gap:9px;font-size:14.5px;min-width:0">
+      <a href="ueber-mich.dc.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Über mich</a>
+      <a href="impressum.dc.html" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Impressum</a>
+      <a href="impressum.dc.html#datenschutz" style="color:oklch(0.87 0.02 78);text-decoration:none" style-hover="color:oklch(0.82 0.11 80)">Datenschutz</a>
+    </div>
+  </div>
+  <div style="max-width:1240px;margin:38px auto 0;font-size:12.5px;color:oklch(0.64 0.02 78);border-top:1px solid oklch(0.38 0.012 265);padding-top:18px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px"><p style="margin:0">© 2026 Valeria Blum, Eventmoderatorin, Traurednerin &amp; Vorlesespitex</p></div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { openIndex: 0, navOpen: false };
+
+  toggleNav = () => this.setState(s => ({ navOpen: !s.navOpen }));
+
+  faqs = [
+    { q: 'Für welche Anlässe eignet sich Ihre Moderation?', a: 'Von Firmenanlässen und Jubiläen bis zu privaten Festen, ich passe mich der Grösse und dem Charakter Ihres Anlasses an.' },
+    { q: 'Erstellen Sie das Programm mit?', a: 'Ja, gerne entwickle ich den Ablauf gemeinsam mit Ihnen und sorge für den roten Faden durch den Abend.' },
+    { q: 'Wie gehen Sie mit spontanen Programmänderungen um?', a: 'Ich bereite mich gründlich vor und bleibe während des Anlasses flexibel, damit auch kurzfristige Änderungen kein Problem sind.' },
+    { q: 'In welchen Sprachen moderieren Sie?', a: 'Standardmässig auf Deutsch, weitere Sprachen sind auf Anfrage möglich.' }
+  ];
+
+  steps = [
+    { n: '1', title: 'Sie kontaktieren mich', text: 'Nehmen Sie über meine Webseite, telefonisch oder per E-Mail Kontakt mit mir auf.' , showKontakt: true },
+    { n: '2', title: 'Angebot', text: 'Entsprechend Ihren Wünschen und Bedürfnissen unterbreite ich eine passende Offerte.', showKonditionen: true },
+    { n: '3', title: 'Vorbereitung', text: 'Wir klären die restlichen Details in einem Gespräch, ich bereite mich vor und sorge für eine reibungslosen Eventmoderation.' }
+  ];
+
+  toggle = (i) => this.setState(s => ({ openIndex: s.openIndex === i ? -1 : i }));
+
+  renderVals() {
+    return {
+      navOpen: this.state.navOpen ? '1' : '0',
+      toggleNav: this.toggleNav,
+      steps: this.steps,
+      faqItems: this.faqs.map((f, i) => ({
+        q: f.q, a: f.a,
+        isOpen: this.state.openIndex === i,
+        icon: this.state.openIndex === i ? '−' : '+',
+        onClick: () => this.toggle(i)
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>
